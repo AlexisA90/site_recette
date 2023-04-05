@@ -1,0 +1,165 @@
+
+*{
+    overflow: auto;
+}
+
+body{
+    background-color: #8ba1bb;
+    font-family: Arial;
+    margin: 0;              
+}
+/* margin est utilisé pour les marges de la page internet */
+
+
+div.contenu{
+    background-color: white;
+    min-width: 400px;
+    margin : 60px 10% 30px 10%;
+    padding: 0px 30px 30px 30px;
+    box-shadow: 4px 4px 10px 10px grey;
+    overflow: visible;
+}
+/*marge: haut, droite, bas, gauche 
+    pour que la marge s'élargisse en fonction de la taille de la page on peut utiliser les %.
+    De même pour le padding.*/
+
+h1{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+p.description{
+    text-align: center;
+    max-width: 400px;
+    font-size: 12;
+    font-style: italic;
+    display: inline-block;
+}
+/*display : permet de modifier l'affichage: Ici en utilisant inline-block, 
+cela nous permet de centrer le block correspondant à description. */
+div.center{
+    text-align: center;
+}
+
+p.categorie{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    padding: 8px 15px;
+    font-weight: bold;  
+    font-size: 16px;
+        
+}
+div.categorie{
+    
+    margin-bottom: 0px;
+    overflow: visible;
+    
+}
+
+div.image{
+    /*background-color: red;*/
+    margin-left: 50px; margin-right: 50px;
+    margin-bottom: 10px;
+    min-height: 200px;
+}
+
+img{
+    object-fit: cover;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 4px 4px #8c829d;
+    
+}
+
+div.separateur{
+    width: 100px;
+    height: 1px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.tab1{
+    position: absolute; bottom: 4px;
+    width: 100%; 
+    color: white; 
+    background-color: #6c829dc0; 
+    height: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tab1 td{
+    vertical-align: top;
+}
+.tab1 th{
+    block-size: 80%;
+}
+
+.tab2 td{
+    vertical-align: top;
+}
+
+.tab2 tr{
+    height: 40px;
+}
+
+td.etape{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+p.numero{
+    padding-top: 4px;
+    text-align: center;
+    color: white;
+    width: 25px;
+    height: 25px;
+    background-color: #6c829d;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+div.section1 p {
+border: 1px solid lightgrey;
+padding-top : 5px;
+padding-bottom: 5px;
+margin : 10px;
+text-align: center;
+font-size: 14px;
+}
+
+div.colonn{
+    width: 45%;
+}
+
+.colonn h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6c829d;
+    padding-bottom: 5px;
+}
+
+div.colonn1{
+display: inline-block;
+margin-right: 10%;
+}
+
+div.colonn2{
+float: right;
+}
+
+/* L'étoile permet de sélectionner toute la page html
+    L'overflow auto permet de réadapter tous ce qui déborde*/
+
