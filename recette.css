@@ -13,9 +13,9 @@ body{
 
 div.contenu{
     background-color: white;
-    min-width: 400px;
-    margin : 60px 10% 30px 10%;
-    padding: 0px 30px 30px 30px;
+    /*min-width: 400px;*/
+    margin : 30px 8px 30px 8px;
+    padding: 0px 2px 20px 2px;
     box-shadow: 4px 4px 10px 10px grey;
     overflow: visible;
 }
@@ -60,8 +60,8 @@ div.categorie{
 }
 
 div.image{
-    /*background-color: red;*/
-    margin-left: 50px; margin-right: 50px;
+   /* background-color: red;*/
+    margin-left: 10px; margin-right: 10px;
     margin-bottom: 10px;
     min-height: 200px;
 }
@@ -83,30 +83,32 @@ div.separateur{
     margin-right: auto;
 }
 
-table.tab1{
-    position: absolute; bottom: 4px;
+table.description{
+    position: absolute; bottom: 0px;
     width: 100%; 
     color: white; 
-    background-color: #6c829dc0; 
-    height: 80px;
+    background-color: #6c829dc0;
+    height: 50px;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+   /* font-size: 14px;*/
+}
+
+.description td{
+    vertical-align: top;
+    font-size: 12px;
+}
+.description th{
+    block-size: 80%;
     font-size: 14px;
 }
 
-.tab1 td{
-    vertical-align: top;
-}
-.tab1 th{
-    block-size: 80%;
-}
-
-.tab2 td{
+.preparation td{
     vertical-align: top;
 }
 
-.tab2 tr{
+.preparation tr{
     height: 40px;
 }
 
@@ -130,7 +132,7 @@ p.numero{
     margin: 0px;
 }
 
-div.section1 p {
+div.ingredient p {
 border: 1px solid lightgrey;
 padding-top : 5px;
 padding-bottom: 5px;
@@ -140,7 +142,7 @@ font-size: 14px;
 }
 
 div.colonn{
-    width: 45%;
+    width: 100%;
 }
 
 .colonn h2{
@@ -151,15 +153,76 @@ div.colonn{
     padding-bottom: 5px;
 }
 
-div.colonn1{
-display: inline-block;
-margin-right: 10%;
-}
-
-div.colonn2{
-float: right;
-}
-
 /* L'étoile permet de sélectionner toute la page html
     L'overflow auto permet de réadapter tous ce qui déborde*/
 
+
+    /*Style pour ordinateur*/
+
+    @media only screen and (min-width: 768px) {
+
+        div.contenu{
+            min-width: 400px;
+            margin : 60px 10% 30px 10%;
+            padding: 0px 30px 30px 30px;
+        }
+
+        table.description{
+            position: absolute; bottom: 0px;
+            width: 100%; 
+            color: white; 
+            background-color: #6c829dc0; 
+            height: 80px;
+            text-align: center;
+        }
+
+        .description td{
+            vertical-align: top;
+            font-size: 14px;
+        }
+        .description th{
+            block-size: 80%;
+            font-size: 16px;
+        }
+
+        div.ingredient p {
+            border: 1px solid lightgrey;
+            padding-top : 5px;
+            padding-bottom: 5px;
+            margin : 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+            
+        div.colonn{
+            width: 45%;
+            margin-top: 40px;
+        }
+            
+        .colonn h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 15px;
+            border-bottom: 5px solid #6c829d;
+            padding-bottom: 5px;
+        }
+            
+        div.colonn1{
+            display: inline-block;
+            margin-right: 10%;
+        }
+            
+        div.colonn2{
+            float: right;
+        }
+
+      }
+      @media only screen and (min-width: 900px) {
+
+        div.contenu{
+            margin-left: auto;
+            margin-right: auto;
+            width: 645px;
+        }
+
+      }

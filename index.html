@@ -4,6 +4,7 @@
     <head>
         <title>Gateau au chocolat</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" href="recette.css"/>
     </head>
 
@@ -15,10 +16,9 @@
             <div class="center">
                 <p class ="description"> «Cette recette facile du gateau au chocolat est un grand classique qui fera plaisir à vos enfants.»</p>
             </div>
-
             <div class="image"; style="position: relative;">
                 <img src="https://jonathanroux.com/gateau.jpg?id=999">
-                <table class = "tab1"; border="0" >
+                <table class = "description"; border="0">
                     <tr>
                         <th>Difficulté</th>
                         <th>Préparation</th>
@@ -33,37 +33,38 @@
                     </tr>
                 </table>
             </div>
-            <div class ="colonn1 colonn">
-            <h2>Ingrédients</h2>
-                <div class="section1">
-                    <p>Chocolat noir: 200g</p>
-                    <p>Beurre: 200g</p>
-                    <p>Sucre: 150g</p>
-                    <p>Farine: 80g</p>
+            <div style="overflow: auto;">
+                <div class ="colonn1 colonn">
+                <h2>Ingrédients</h2>
+                    <div class="ingredient">
+                        <p>Chocolat noir: 200g</p>
+                        <p>Beurre: 200g</p>
+                        <p>Sucre: 150g</p>
+                        <p>Farine: 80g</p>
+                    </div>
                 </div>
-            </div>
-            <div class="colonn2 colonn">
-                <h2>Préparation</h2>
-                <table class="tab2">                  
-                    <tr> 
-                        <td><p class ="numero">1</p></td>
-                        <td class ="etape">Faire fondre le chocolat avec le beurre.</td>
-                    </tr>
-                    <tr> 
-                        <td><p class ="numero">2</p></td>
-                        <td class ="etape">Mélanger le sucre, les oeufs et la farine.</td>
-                    </tr> 
-                    <tr> 
-                        <td><p class ="numero">3</p></td>
-                        <td class ="etape">Mélanger le tout pour faire une pâte.</td>
-                    </tr> 
-                    <tr> 
-                        <td><p class ="numero">4 </p></td>
-                        <td class ="etape">Mettre au four.</td>
-                    </tr> 
-                    
-                </table>
-            </div>
+                <div class="colonn2 colonn">
+                        <h2>Préparation</h2>
+                        <table class="preparation">                  
+                            <tr> 
+                                <td><p class ="numero">1</p></td>
+                                <td class ="etape">Faire fondre le chocolat avec le beurre.</td>
+                            </tr>
+                            <tr> 
+                                <td><p class ="numero">2</p></td>
+                                <td class ="etape">Mélanger le sucre, les oeufs et la farine.</td>
+                            </tr> 
+                            <tr> 
+                                <td><p class ="numero">3</p></td>
+                                <td class ="etape">Mélanger le tout pour faire une pâte.</td>
+                            </tr> 
+                            <tr> 
+                                <td><p class ="numero">4 </p></td>
+                                <td class ="etape">Mettre au four.</td>
+                            </tr> 
+                        </table>
+                </div>  
+            </div> 
         </div>
     </body>
 </html>
